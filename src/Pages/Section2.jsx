@@ -16,7 +16,7 @@ const Section2 = () => {
     Our Work featured on
 </h1>
 
-<div id="imageLogos" className='flex flex-row justify-center md:gap-20 border-2 border-white w-fit mx-auto rounded-[10px] shadow-lg p-2'>
+<div id="imageLogos" className='flex flex-row justify-center md:gap-20 border-2 border-white w-fit  rounded-[10px] shadow-lg p-2'>
 <img src={forbes}/>
 <img src={netflix}/>
 <img src={amazon}/>
