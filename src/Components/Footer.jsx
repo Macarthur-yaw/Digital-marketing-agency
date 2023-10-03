@@ -1,27 +1,8 @@
 import {FaFacebook,FaTwitter,FaLinkedin,FaYoutube} from 'react-icons/fa'
-import footerPic1 from '../assets/footerpic1.jpg'
+import footerPic1 from '../assets/footerpic1.jpg';
 import footerPic2 from '../assets/footerpic2.jpg'
 
 
-function footerCard (props){
-    return (
-        <div>
-            <h1>
-                Per Click Management
-            </h1>
-
-            <h3>
-                PageTraffic is a premier Search Engine Marketing (SEM)
-            </h3>
-
-            <h3>
-                15 April 2022
-            </h3>
-
-            <img src={props.imgPath}/>
-        </div>
-    )
-}
 const Footer = () => {
    
     return (  
@@ -63,13 +44,49 @@ FindBestSEO has ranked PageTraffic
 <h1>
     LATEST NEWS
 </h1>
-
 <div>
-    <footerCard imgPath={footerPic1}/>
+<div>
+    <img src={footerPic1}/>
+
 </div>
-
 <div>
-    <footerCard imgPath={footerPic2}/>
+            <h1>
+                Per Click Management
+            </h1>
+
+            <h3>
+                PageTraffic is a premier Search Engine Marketing (SEM)
+            </h3>
+
+            <h3>
+                15 April 2022
+            </h3>
+
+        </div>
+
+
+        </div>
+
+        <div>
+<div>
+    <img src={footerPic2}/>
+</div>
+<div>
+            <h1>
+                Per Click Management
+            </h1>
+
+            <h3>
+                PageTraffic is a premier Search Engine Marketing (SEM)
+            </h3>
+
+            <h3>
+                15 April 2022
+            </h3>
+
+        </div>
+
+
 </div>
 </div>
 
@@ -78,3 +95,5 @@ FindBestSEO has ranked PageTraffic
 }
  
 export default Footer;
+ 
+ 

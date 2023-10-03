@@ -15,7 +15,7 @@ const Card = (props) => {
 Looking to get higher ROI by improving website.
 </h3>
 
-<a href="">
+<a href="" className={`text-${props.textColor}`}>
  View more 
 </a>
         </div>
