@@ -1,10 +1,16 @@
+/* eslint-disable react/prop-types */
 
-const Card = (props) => {
+const Card = ({textColor,borderColor,imgPath}) => {
+
+    
+    console.log(textColor);
+    console.log(`the border color is ${borderColor}`);
+
     return (
-        <div className="border-[1px] md:w-[270px] md:h-[333px] bg-white shadow-lg p-2 rounded-[25px]  border-black  ">
+        <div className={`border-[2px] md:w-[270px] md:h-[333px] bg-white shadow-lg p-2 rounded-[25px]  border-[${borderColor}]  `}>
 <div className="">
 
-<img src={props.imgPath} className=" w-1/5 border-2 p-2 rounded-[13px]" alt="a description" />
+<img src={imgPath} className={`bg-[${textColor}] border-[${borderColor}] w-1/5 p-2 rounded-[13px]`} alt="a description" />
 
 </div>
 <h1 className="text-[#011627] text-[26px] font-semibold leading-normal">
@@ -15,7 +21,7 @@ const Card = (props) => {
 Looking to get higher ROI by improving website.
 </h3>
 
-<a href="" className={`text-${props.textColor}`}>
+<a href="" className={`text-[${textColor}] `}>
  View more 
 </a>
         </div>

@@ -26,7 +26,7 @@ const Section2 = () => {
             </div>
 
 
-            <div className='flex flex-row py-10  justify-center'>
+            <div className='flex flex-row md:gap-6 py-10  justify-center'>
                 <div className='flex flex-col gap-6 '>
 <h1 className='text-[#011627] text-[30px] font-semibold leading-normal'>
 HOW PAGETRAFFIC CREATES 
@@ -37,7 +37,9 @@ HYPER BUSINESS GROWTH
 <h3 className='text-[#011627] text-[18px] font-semibold leading-normal'>
 PageTraffic offers top-notch SEO and digital
 <br/>
- marketing solutions to help you rank high on search results, connect with.
+ marketing solutions to help you rank high on search 
+ <br/>
+ results, connect with.
 
 </h3>
 
@@ -84,14 +86,14 @@ PageTraffic offers top-notch SEO and digital
         Explore more
     </button>
             </div>
-                <div className='flex flex-row  gap-4'>
+                <div className='flex flex-row  gap-8'>
                 {/* ../assets/search 1.png */}
                     <div className='flex flex-col gap-2'>
-                    <Card  imgPath={image2} textColor="#2EC4B6"/>
-<Card imgPath={image2} textColor="#2EC4B6"/>
+                    <Card  imgPath={image2} textColor="#FF1D03" borderColor="#FF1D03"/>
+<Card imgPath={image2} textColor="#2EC4B6" borderColor="#FF1D03" />
                     </div><div className='py-10 flex flex-col gap-2'>
-<Card imgPath={image1} textColor="#2EC4B6"/>
-<Card imgPath={image2} textColor="#2EC4B6"/>
+<Card imgPath={image1} textColor="#2EC4B6" borderColor="#FF1D03"/>
+<Card imgPath={image2} textColor="#FF1D03" borderColor="#FF1D03"/>
 
 </div>
 

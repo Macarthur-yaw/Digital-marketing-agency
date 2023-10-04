@@ -2,6 +2,7 @@ import image1 from '../assets/image5.jpg'
 import image2 from '../assets/image6.jpg'
 import image3 from '../assets/image7.jpg'
 import image4 from '../assets/image8.jpg'
+import {FaArrowRight,FaLessThan,FaGreaterThan} from 'react-icons/fa'
 
 const blogData=[
 {
@@ -37,22 +38,37 @@ const blogData=[
 
 function BlogCard() {
     return (
-      <div className="grid grid-cols-2 ">
+<div className='flex flex-col py-[50px]  justify-center items-center'>
+      <h1 className='md:text-[45px] font-bold tracking-[1.125px] text-[#011627] leading-normal'>See our blog post</h1>
+     <br></br>
+     <span className='flex justify-end gap-2 w-[100%] px-4'>
+        <button className='border-2 p-2 md:rounded-[6px] rounded-md bg-[#FFF3F5] border-[#FFF3F5] shadow-lg'><FaLessThan className='text-[#E71D36]'/></button>
+<button className='border-2 p-2 md:rounded-[6px] rounded-md bg-[#E71D36] border-[#E71D36] text-white shadow-lg'><FaGreaterThan/></button>
+</span>
+
+      <div className="grid grid-cols-2 py-6 gap-8">
+
+        
         {blogData.map((content) => (
-          <div key={content.id} className="flex flex-col items-center mt-4">
-            <div className="text-center">
-              <h3>{content.date}</h3>
-              <h1>{content.title}</h1>
-              <p>{content.content}</p>
-              <button className="bg-blue-500 text-white px-4 py-2 mt-2">Read more</button>
+          <div key={content.id} className="flex flex-row items-center gap-8  md:w-[559px] md:h-[209px] rounded-[23px] bg-[#F8FFFE]">
+           <div>
+              <img src={content.image} alt={content.title} className="md:w-[300px] md:h-[199px] rounded-[12px]" />
             </div>
-            <div>
-              <img src={content.image} alt={content.title} className="mt-4" />
+            <div className="flex flex-col gap-4">
+              <h3 className='text-[#011627] text-[12px] font-normal'>{content.date}</h3>
+              <h1 className='text-[#011627] md:text-[26px] font-semibold leading-normal'>{content.title}</h1>
+              <p className='text-[#011627] text-[18px] font-nomral tracking-[0.36px]'>{content.content}</p>
+              <a href='' className="text-[#2EC4B6] inline-flex items-center gap-2 md:text-[18px] tracking-[0.36px]">
+               
+                Read more
+                <FaArrowRight/>
+                </a>
             </div>
+           
           </div>
         ))}
       </div>
-    );
+      </div>);
   }
   
 
